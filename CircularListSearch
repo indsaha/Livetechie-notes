@@ -1,0 +1,19 @@
+Header is the pointer to the Header Node and X is the data which is to be inserted.
+Key is the data of the node searching for.
+
+CirtcularListSearch()
+{
+	ptr = Header -> Link
+	while(ptr -> Data != Key ) and (ptr != Header) Do
+	{
+		ptr = ptr -> Link
+	}
+	if(ptr -> Data = Key)
+	{
+		return (ptr)
+	}
+	else
+	{
+		print "Entire List is searched. Key Node is not Found.
+	}
+}

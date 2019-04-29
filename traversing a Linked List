@@ -1,0 +1,8 @@
+Header is the pointer to the Header Node
+
+ptr= Header -> Link
+while (ptr != NULL)
+{
+	process(ptr)
+	ptr = ptr -> Link
+}

@@ -1,0 +1,21 @@
+Header is the pointer to the Header Node and X is the data which is to be inserted.
+
+InsertEnd(){
+new = GetNode(Node)
+
+	if(new= NULL)
+	{
+		printf "Memory Insufficient. Isertion not possible"
+		return
+	}
+	else
+	{
+		ptr = Header
+		while(ptr->Link != Null) do {
+			ptr = ptr->Link
+		}
+		
+		ptr->Link = new
+		new -> Data = X
+	}
+}

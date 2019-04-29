@@ -1,0 +1,32 @@
+
+
+InsertAtAny(){
+	ptr = Header
+	While (ptr -> Data != Key) and (ptr ->Rlink != NULL)
+	{
+		ptr = ptr -> RLink
+	}
+	new = GetNode(Node)
+	if(new = NULL)
+	{
+		Print "Memory is not available"
+	}
+	if(ptr ->RLink = NULL)
+	{
+		new -> LLink = ptr
+		ptr -> RLink = new
+		new -> RLink = NULL
+		new -> Data = X
+	}
+	else
+	{
+		ptr1 = ptr -> RLink
+		new -> LLink = ptr
+		new -> RLink = ptr1
+		ptr -> RLink = new
+		ptr1 -> LLink = new
+		ptr = new
+		new -> Data = X
+	}
+	
+}

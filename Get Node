@@ -1,0 +1,30 @@
+Node is the type of the data for which memory must be allocated
+Avail is pointer to the Pool of Memory Storage
+
+GetNode(){
+	if(Avail = NULL)
+	{
+		return (NULL)
+		print "Insufficient Memory. Unable to Allocate"
+	}
+	else
+	{
+		ptr = Avail
+		while ((SizeOf(ptr) != SizeOf(Node)) and (ptr->Link != NULL)) do
+		{
+			ptr1 = ptr
+			ptr = ptr -> Link
+		}
+		
+		if(SizeOf(ptr) = SizeOf(Node)
+		{
+			prt1->Link = ptr->Link
+			return(ptr)
+		}
+		else
+		{
+			print"The memory is too large to fit"
+			Return(NULL)
+		}
+	}
+}

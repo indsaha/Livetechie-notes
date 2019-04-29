@@ -1,0 +1,17 @@
+Header is the pointer to the Header Node and X is the data which is to be inserted.
+
+InsertAtFront() {
+new = GetNode(Node)
+
+if(new = NULL)
+{
+	print"Memory underflow: No Insertion"
+	return
+}
+else
+{
+	new -> Link = Header->Link
+	new -> Data = X
+	Header -> Link = new
+}
+}

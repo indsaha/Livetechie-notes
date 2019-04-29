@@ -1,0 +1,24 @@
+Circular queue
+CQ is the array for circular queue.
+Front and Rear ar two pointers.
+
+if(Front = 0)
+{
+	Front = 1
+	Rear = 1
+	CQ[front] = item
+}
+
+else
+{
+	next = (Rear mod Length) + 1
+	if(next != Front)
+		{
+			Rear = next
+			CQ[Rear] = Item
+		}
+	else
+	{
+		print "Queue is Full"
+	}
+}

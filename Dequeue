@@ -1,0 +1,24 @@
+Item to be deleted at the Front of the Queue.
+Front and Rear as per the notions of the Queue.
+Q is the Array representation
+
+Dequeue(){
+	if(Front = 0)
+	{
+		printf "Queue is empty"
+		return
+	}
+	else
+	{
+		Item = Q[Front]
+		If(Front = Rear)
+		{
+			Rear = 0
+			Front = 0
+		}
+		else
+		{
+			Front = Front + 1
+		}
+	}
+}

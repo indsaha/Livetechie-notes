@@ -1,0 +1,31 @@
+Header is the pointer to the Header Node and X is the data which is to be inserted.
+Key is the data of the node after which New node has to be inserted.
+
+InsertAnyPosition(){
+new GetNode(Node)
+
+	if(new = NULL)
+	{
+		print"Insuffiecient Memory. Cannot be Added"
+		return
+	}
+	else
+	{
+		ptr = Header
+		while((ptr->Data != Key) and (ptr->Link !=NULL)) do
+		{
+			ptr = ptr->Link
+		}
+		if(ptr->Link = NULL)
+		{
+			print"Key is not Available in the List"
+			return
+		}
+		else
+		{
+			new -> Link = ptr -> Link
+			new -> Data = X
+			ptr -> Link = new
+		}
+	}
+}

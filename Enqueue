@@ -1,0 +1,18 @@
+Item to be inserted at the Rear of the Queue.
+Front and Rear at the notions of the Queue.
+
+Enqueue(){
+	if (Rear = N )
+	{
+		print "Queue is full"
+	}
+	else
+	{
+		if (Rear = 0) and (Front = 0)
+		{
+			Front = 1
+		}
+		Rear = Rear + 1
+		Q[Rear] = Item
+	}
+}

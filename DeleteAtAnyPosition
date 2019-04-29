@@ -1,0 +1,25 @@
+Header is the pointer to the Header Node and Key is the data of the node to be deleted.
+
+DeleteAnyPosition()
+{
+	ptr1 = Header
+	ptr = ptr1 -> Link
+	while(ptr != NULL)
+	{
+		if(ptr -> Data != Key)
+		{
+			ptr1 = ptr
+			ptr = ptr->Link
+		}
+		else
+		{
+			ptr1 -> Link = ptr -> Link
+			returnNode(ptr)
+		}
+		
+	}
+	if (ptr = NULL)
+	{
+		print "Node with Key Doesnot Exist.
+	}
+}

@@ -1,0 +1,17 @@
+
+
+InsertAtFront(){
+	ptr = Header -> RLink
+	new = GetNode(Node)
+	if(new != NULL) {
+		new -> LLink = Header
+		Header -> RLink = new
+		new -> RLink = ptr
+		ptr ->LLink = new
+		new -> Data = X
+	}
+	else
+	{
+		print "Unable to Allocate Memory. Insertion not Possible"
+	}
+}

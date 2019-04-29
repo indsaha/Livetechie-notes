@@ -1,0 +1,14 @@
+Item is to be poped
+Top pointing to top element
+
+Pop(){
+	if (Top < 1)
+	{
+		print "Stack is empty"
+	}
+	else
+	{
+		Item = A[Top]
+		Top = Top - 1
+	}
+}

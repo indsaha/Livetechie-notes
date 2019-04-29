@@ -1,0 +1,14 @@
+Item is to be pushed
+Top pointing to top element
+
+Push(){
+	if Top >= Size
+	{
+		print "Stack is full"
+	}
+	else
+	{
+		Top = Top + 1
+		A[Top] = Item
+	}
+}
