@@ -1,0 +1,40 @@
+var outerLoop , innerLoop
+arrayLength n
+
+for (outerLoop)=1 to outerLoop <n 
+	do
+		key = array[outerLoop]
+		innerLoop = outerLoop-1
+		while(innerLoop > = 0 AND (array[innerLoop] > key))
+		do
+		{
+			array[innerLoop + 1] = array[innerLoop]
+			innerLoop = innerLoop-1
+		}
+		array[innerLoop+1] = key
+endFor.
+
+
+
+
+//Selection Sort
+
+for outerLoop=1 to (n-1) do
+	innerLoop=SelectMin(outerLoop,n)
+		if(outerLoop != innerLoop) then
+			Swap(array[innerLoop],array[outerLoop])
+		EndIf
+EndFor
+
+
+Function SelectMin()
+
+min=A[Left]
+minLoc=Left
+for outerLoop=Left+1 to Right do
+	if(min > A[outerLoop]) then
+		min= A[outerLoop]
+		minLocation= outerLoop
+	endif
+endFor
+return(minLocation)	

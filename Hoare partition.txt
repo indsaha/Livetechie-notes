@@ -1,0 +1,19 @@
+Partition
+{
+	pivot= array[leftArrowPointer]
+	low= leftArrowPointer - 1;
+	high = rightArrowPointer + 1
+	
+	Do
+		Do
+			high= high - 1
+			while(pivot < A[high]) And (low < high)
+			Do
+				low = low + 1
+			while(pivot> A[low]) and (low<high)
+			swap (A[low], A[high])
+	while (low<high)
+	loc = low
+	Swap(A[loc],A[leftArrowPointer])
+	return (loc)
+}
